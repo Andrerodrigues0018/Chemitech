@@ -23,7 +23,7 @@
 <meta name="robots" content="index, no-follow" />
 
         
-        <title> Bem-vindo ao Chemitech </title>
+        <title> Bem-vindo ao Chemitecha </title>
         
     </head>
     
