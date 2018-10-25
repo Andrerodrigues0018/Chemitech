@@ -1,0 +1,454 @@
+/* 
+    Config
+*/
+
+@charset"utf-8";
+
+/* Lincagem de fonts */
+
+@font-face {
+    font-family: roboto_re;
+    src: url("../_fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: roboto_th;
+    src: url("../_fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: roboto_bo;
+    src: url("../_fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: roboto_li;
+    src: url("../_fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: baron;
+    src: url("../_fonts/Baron Neue.otf");
+}
+
+
+
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    font-family: roboto_re;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 100%;
+    border: none;
+    outline: none;
+}
+
+/* Elementos genéricos */
+
+html {
+    width:  100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-family: baron;
+}
+
+.card-shadow {
+    box-shadow: 0px 3px 6px rgba(0,0,0,.2);
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3d3d3d; 
+        border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+/* Header */
+
+header.cabecalho {
+    float: left;
+    width: 100%;
+    padding: 20px 8%;
+    color: #1a1a1a;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+header.cabecalho h2 {
+    float: left;
+    border-bottom: 2px  ;
+    margin-top: 10px;
+}
+
+header.cabecalho a {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url("../_img/_icons/menu_button_light.png");
+    font-size:  0;
+}
+
+/* Section introducao */
+
+section.introducao {
+    float: left;
+    width: 100%;
+    /* !!! Colocar o height no media querie! */
+    background: url("../_img/_figures/intro_bg.png") no-repeat fixed;
+    background-position: center;
+    color: #ffffff;
+    padding: 120px 10px 10px 10px;
+}
+
+figure.intro-logo {
+    text-align: center; 
+    margin: 40px 0 40px 0;
+}
+
+section.introducao i {
+    margin-right: 10px;
+}
+
+section.introducao a.btn-dow {
+    width: 238px;
+    padding: 22px 0;
+    background: url("../_img/_icons/btn_dow_238_dark.png") no-repeat;
+    float: left;
+    margin: 10px 11% 0 11%;
+    text-align: center;
+    color: #ffffff;
+    transition: .1s ease-in;
+}
+
+section.introducao a.btn-dow:hover {
+    background: url(../_img/_icons/btn_dow_238_hover.png) no-repeat;
+    color: #1a1a1a;
+}
+
+section.introducao h2 {
+    font-size: 2.5em;
+}
+
+section.introducao p {
+    font-size: .9em;
+    text-indent: 28px;
+}
+
+section.introducao a.btn-scroll {
+    float: left;
+    width: 61px;
+    height: 61px;
+    background: url(../_img/_icons/btn_scroll_light.png) no-repeat;
+    margin: 30px 40% 30px 40%;
+    font-size: 0;
+}
+
+
+
+/* Section de Recursos */
+
+section.resources {
+    float: left;
+    width: 100%;
+    background: #61bf93;
+    padding: 10px;
+    color: #1a1a1a;
+}
+
+div.resource-card {
+    float: left;
+    width: 80%;
+    text-align: center;
+    margin: 10%;
+}
+
+div.resource-card h2 {
+    font-size: 1.2em;
+    border-bottom: 2px #1a1a1a solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.resource-card p {
+    text-align: justify;
+}
+
+/* Secction de contato */
+
+section.contato {
+    float: left;
+    width: 100%;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+}
+
+section.contato div.cantato-card {
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
+div.cantato-card p {
+    margin: 10px 0 10px 0;
+    text-indent: 20px;
+}
+
+/* Section do tutorial */
+
+section.tutorial {
+    float: left;
+    width: 100%;
+    background: #3fa4a9;
+    padding: 20px;
+}
+
+section.tutorial h2 {
+    font-size: 1.5em;
+}
+
+figure.thumbnail img{
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Section do download */
+
+section.download {
+    float: left;
+    width: 100%;
+}
+
+section.download div.ios {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+section.download div.android {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: #b2d684;
+}
+
+figure.dow_fig img {
+    width: 60%;
+    margin: 20px 0 20px 25%;
+}
+
+a.dow-btn {
+    float: left;
+    border: 2px solid #333333;
+    color: #333333;
+    padding: 10px 20px;
+    margin: 50px 0 20px 20%;
+    transition: .1s ease-in;
+}
+
+a.dow-btn:hover {
+    background-color: #333333;
+    color: #f9f9f9;
+}
+
+/* Cor do androidink b2d684 */
+
+/* Footer */
+
+footer {
+    float:left;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #f9f9f9;
+    padding: 40px;
+}
+
+div.redes-sociais a {
+    color: #f9f9f9;
+}
+
+div.redes-sociais a.facebook:hover {
+    color: #0066ff
+}
+
+div.redes-sociais a.twitter:hover {
+    color: #66ccff
+}
+
+div.redes-sociais a.yt:hover {
+    color: #ff3333
+}
+
+div.redes-sociais a.google:hover {
+    color: #ff9999
+}
+
+footer h2 {
+    font-size: 1.5em;
+}
+
+footer p {
+    font-size: .8em;
+    text-indent: 20px;
+}
+
+/* MEDIA QUERIES */
+
+/* Elementos qque nao se encaixam no mobile */
+
+@media screen and (max-width: 1023px) {
+    
+    section.introducao figure.intro-logo-200 {
+        display: none;
+    }
+    
+    figure.email-fig {
+        display: none;
+    }
+    
+    figure.tel-fig{
+        display: none;
+    }
+    
+}
+
+/* Dispositivos maiores */
+
+@media screen and (min-width: 1024px) {
+    
+    /* INTRODUCAO */
+    
+    section.introducao {
+        height: 100%;
+    }
+    
+    section.introducao h2 {
+        font-size: 4em;
+        margin: 10% 0 0 10%;
+    }
+    
+    section.introducao p {
+        margin-left: 20%
+    }
+    section.introducao figure.intro-logo {
+        display: none;
+    }
+    
+    section.introducao figure.intro-logo-200 {
+        float: right;
+        margin: -15% 0 0 0;
+    }
+    
+    section.introducao figure.intro-logo-200 img {
+        width: 60%;
+    }
+    
+    div.intro-dow {
+        float: left;
+         margin: 25px 0 0 10%;
+    }
+    
+    a.btn-scroll {
+        margin-left: 50%;
+    }
+    
+    /* RECURSOS */
+    
+    section.resources {
+        height: 100%;
+    }
+    
+    div.resource-card {
+        width: 200px;
+        float: left;
+        margin-left: -20px;
+    }
+    
+    div.resource-card:first-child {
+        margin-left: 50px;
+    }
+    
+    /* CONTATO */
+    
+    div.cantato-card p {
+        display: none;
+    }
+    
+    div.cantato-card figure {
+        margin: 20px 0 20px 0;
+    }
+    
+    /* TUTORIAL */
+    
+    section.tutorial {
+        height: 100%;
+    }
+    
+    section.tutorial h2 {
+        font-size: 3em;
+    }
+    
+    figure.thumbnail {
+        margin: 5% 0 0 15%; 
+    }
+    
+    
+    figure.thumbnail img {
+        width: 80%;
+    }
+    
+    div.tutorial-text {
+        display: none;
+    }
+    
+    /* DOWNLOAD */
+    
+    section.download {
+        height: 100%;
+    }
+    
+    section.download div.ios {
+        width: 50%;
+        height: 100%;
+    }
+    
+    section.download div.android {
+        width: 50%;
+        height: 100%;
+    }
+    
+    figure.dow_fig img{
+        width: 40%;
+        margin: 10% 0 5% 20%;
+    }
+    
+    a.dow-btn {
+        margin-left: 30%;
+    }
+}

@@ -1,0 +1,8 @@
+O aplicativo tem 4 funções para gerenciar os resíduos produzidos em um laboratório, sendo essas funções:
+*Descartar Resíduo - Basicamente é feito em 3 etapa, sendo a primeira uma listagem dos descartes já preenchidos, seguido pelo preenchimento de um formulário ou o descarte de item já listado para a bombona correta.
+*Solicitar Resíduo - Função que permite o químico preencher e acompanhar os pedidos de resíduos que o mesmo fez para os outros laboratórios.
+*Gerenciar Recipientes: Mostra as bombonas de determinado laboratorio e as informações do estado dela (cheia, nome, oque tem dentro).
+*Gerenciar Coletas: Uma função que acompanha as solicitações de esvaziamentos das bombonas.
+
+Explicando melhor o *gerenciar coletas:
+Minha bombona ficou cheia? então solicitar uma coleta dessa bombona

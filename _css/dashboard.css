@@ -1,0 +1,322 @@
+/* 
+    Config
+*/
+
+@charset"utf-8";
+
+/* Lincagem de fonts */
+
+@font-face {
+    font-family: roboto_re;
+    src: url("../_fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: roboto_th;
+    src: url("../_fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: roboto_bo;
+    src: url("../_fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: roboto_li;
+    src: url("../_fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: baron;
+    src: url("../_fonts/Baron Neue.otf");
+}
+
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 3px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333; 
+        border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+   background: #444; 
+}
+
+
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    font-family: roboto_re;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 100%;
+    float: left;
+    border: none;
+    outline: none;
+}
+
+/* Elementos genéricos */
+
+html {
+    width:  100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-family: baron;
+}
+
+.card-shadow {
+    box-shadow: 0px 3px 6px rgba(0,0,0,.1);
+}
+
+/* Header */
+
+header.cabecalho {
+    float: left;
+    height: 10vh;
+    padding: 15px 2%;
+    width: 100%;
+    color: #1a1a1a;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+header.cabecalho h2 {
+    float: left;
+    margin-top: 0px;
+    color: #333;
+    //text-shadow: 1px 2px 0 #111;
+    letter-spacing: 3px;
+    font-size: 20pt;
+
+}
+
+
+/* Section introducao */
+
+section.display {
+    float: left;
+    width: 100%;
+    /* !!! Colocar o height no media querie! */
+    //background: #333;
+    color: #ffffff;
+    margin-top: 10vh;
+    padding: 0;
+    height: 90vh;
+}
+
+div.menu{
+    width: 20%;
+    height: 100%;
+    background: #07ABA0;
+    //url("../_img/_figures/intro_bg.png") no-repeat fixed;
+    //#2ECC71;
+    background-position: center;
+    float: left;
+    box-shadow: 1px 15px 6px rgba(0,0,0,.3);
+}
+
+/**** Card Users ******/
+
+div.menu div.card-user{
+    width: 100%;
+    float: left;
+    height: 20%;
+    background: rgba(30,30,30,0.9);
+    z-index: 1;
+    box-shadow: 1px 5px 6px rgba(0,0,0,.1);
+    //border-bottom:1px solid white;
+}
+div.menu div.card-user img{
+    width: 80px;
+    height: 80px;
+    margin-left: 6%;
+    margin-top: 6.5%;
+    float: left;
+    border:2px solid white;
+    border-radius: 100%;
+    filter: brightness(80%);
+    //box-shadow: 0px 5px 20px #444;
+}
+
+div.menu div.card-user h1{
+    width: 56%;
+    margin-top: 9%;
+    padding: 10px;
+    color: #333;
+    margin-left: 8%;
+    margin-bottom: 0;
+    //font-family: baron;
+    float: right;
+    background: white;
+}
+
+div.menu div.card-user h2{
+     width: 56%;
+    margin-top: 0%;
+    padding: 5px;
+    font-size: 11pt;
+    margin-left: 8%;
+}
+div.menu div.card-user h2 i{
+    float:right;
+    padding: 3px;
+}
+/**** Card Option ******/
+
+div.menu div.card-option{
+    width: 100%;
+    padding: 20px;
+    float: left;
+    cursor: pointer;
+    height: 9%;
+    z-index: 1;
+    padding-top: 18px;
+    //box-shadow: 1px 5px 6px rgba(0,0,0,.1);
+    //border-bottom:1px solid white;
+
+    background: rgba(10,10,10,0.03);
+    transition: 1s;
+}
+
+
+div.menu div.card-option:hover{
+    background: rgba(10,10,10,0.2);
+}
+
+div.menu div.card-option i{
+    margin-right: 30px;
+}
+
+div.menu .box-options{
+
+width: 100%;
+float: left;
+margin-bottom: 12px;
+height: auto;
+
+}
+div.menu div.rows-option{
+    width: 100%;
+    float: left;
+    padding: 20px;
+    transition: 0.3s;
+    padding-top: 14px;
+    height: 50px;
+}
+div.menu div.rows-option:hover{
+    background: rgba(250,250,250,0.1);
+
+}
+div.menu div.rows-option i{
+    margin-right: 30px;
+}
+
+/**** Content User ******/
+
+div.content{
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    z-index: 0;
+    color: #333;
+}
+
+div.content h1#titulo{
+    
+    float: left;
+    font-size: 35pt;
+    width: 95%;
+    font-family: roboto_bo;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+div.box-info{
+    width: 45%;
+    height: 160px;
+    margin-left: 5%;
+    float: left;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 2%;
+    z-index: 0;
+    color:#333;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 4px 3px 10px rgba(0,0,0,0.25);
+}
+
+div.box-info:hover{
+    background:#333;
+    color: white;
+    box-shadow: 4px 3px 40px rgba(0,0,0,0.35);
+}
+
+
+div.box-info div.graph-content{
+    
+    width: 70px;
+    height: 100px;
+
+   
+    float: left;
+    background: #00e100;
+
+}
+div.box-info div.graph-content2{
+    
+    width: 30px;
+    height: 100px;;
+    float: left;
+    background: #ECF0F1;
+
+}
+div.box-info  div.graph-value{
+    width: 80px;
+    height: 80px;
+    margin:10px;        
+    margin-top: -90px;
+    border-radius: 100%;
+    float: left;
+    font-family: baron;
+    text-align: center;
+    font-size: 20pt;
+    padding: 20px;
+    background: white;
+}
+
+div.box-info h1{
+    font-size: 20pt;
+    width: 15%;
+    border-bottom: 2px solid #333;
+    float: left;
+    font-family: roboto_bo;
+    margin-top: 25px;
+}
+div.box-info p{
+    font-size: 10pt;
+    width: 51.5%;
+
+    float: left;
+}
